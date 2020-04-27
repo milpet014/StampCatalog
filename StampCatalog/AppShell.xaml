@@ -62,10 +62,10 @@
     <FlyoutItem Title="ČESKOSLOVENSKO"
                 Icon="czechoslovak.png" >
         <Tab>
-            <ShellContent Title="1993">
+            <ShellContent Title="1945">
                 <views3:cs1945 />
             </ShellContent>
-            <ShellContent Title="1994">
+            <ShellContent Title="1946">
                 <views3:cs1946 />
             </ShellContent>
         </Tab>
