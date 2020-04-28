@@ -1,5 +1,6 @@
 ﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:views="clr-namespace:StampCatalog"
        xmlns:views1="clr-namespace:StampCatalog.sk" 
        xmlns:views2="clr-namespace:StampCatalog.cz" 
        xmlns:views3="clr-namespace:StampCatalog.cs"
@@ -16,6 +17,11 @@
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
+
+    <ShellContent Title="DOMOV"
+                  Icon="home.png"
+                  ContentTemplate="{DataTemplate views:MainPage}"/>
+
 
     <FlyoutItem Title="SLOVENSKÁ REPUBLIKA"
                 Icon="slovak.png">

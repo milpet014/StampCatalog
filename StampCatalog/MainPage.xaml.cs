@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace StampCatalog
@@ -9,6 +10,11 @@ namespace StampCatalog
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Routing.RegisterRoute("sk1993", typeof(MainPage));
         }
     }
 }

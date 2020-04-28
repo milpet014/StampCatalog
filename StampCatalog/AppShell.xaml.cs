@@ -1,6 +1,5 @@
 ﻿using System;
 using Xamarin.Forms;
-
 namespace StampCatalog
 {
     public partial class AppShell : Shell
@@ -9,10 +8,5 @@ namespace StampCatalog
         {
             InitializeComponent();
         }
-
-        //private void InitializeComponent()
-        //{
-          //  throw new NotImplementedException();
-        //}
     }
 }
