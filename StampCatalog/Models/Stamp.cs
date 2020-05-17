@@ -19,3 +19,4 @@ namespace StampCatalog.Models
         public string Image { get; set; }
     }
 }
+

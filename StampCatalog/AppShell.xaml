@@ -3,7 +3,7 @@
        xmlns:views="clr-namespace:StampCatalog"
        xmlns:views1="clr-namespace:StampCatalog.sk" 
        xmlns:views2="clr-namespace:StampCatalog.cz" 
-       xmlns:views3="clr-namespace:StampCatalog.cs"
+       xmlns:views3="clr-namespace:StampCatalog.cs" xmlns:views4="clr-namespace:StampCatalog.Views"
        FlyoutHeaderBehavior="CollapseOnScroll"
        x:Class="StampCatalog.AppShell">
 
@@ -26,6 +26,9 @@
     <FlyoutItem Title="SLOVENSKÁ REPUBLIKA"
                 Icon="slovak.png">
         <Tab>
+            <ShellContent Title="Test">
+                <views4:StampsView/>
+            </ShellContent>
             <ShellContent Title="1993">
                 <views1:sk1993 />
             </ShellContent>
