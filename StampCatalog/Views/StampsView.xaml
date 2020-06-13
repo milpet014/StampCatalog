@@ -15,7 +15,7 @@
     <CollectionView ItemsSource="{Binding Stamps}">
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="models:Stamp">
-                <Grid>
+                <Grid Padding="6">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>

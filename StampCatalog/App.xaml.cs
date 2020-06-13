@@ -1,9 +1,12 @@
-﻿using Xamarin.Forms;
+﻿using StampCatalog.Services;
+using Xamarin.Forms;
 
 namespace StampCatalog
 {
     public partial class App : Application
     {
+        public StampService Stamps { get; private set; }
+
         public App()
         {
             InitializeComponent();
@@ -11,16 +14,10 @@ namespace StampCatalog
             MainPage = new AppShell();
         }
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
+            Stamps = new StampService();
+            await Stamps.Initialize();
         }
     }
 }

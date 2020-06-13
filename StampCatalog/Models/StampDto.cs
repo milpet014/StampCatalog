@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace StampCatalog.Models
 {
-    public class Stamp
+    public class StampDto
     {
         public string Name { get; set; }
         public string Country { get; set; }
@@ -15,7 +15,7 @@ namespace StampCatalog.Models
         public string Color { get; set; }
         public string CatValue { get; set; }
         public string Value { get; set; }
-        public List<Stamp> SerieContains { get; set; }
+        public List<string> SerieContainsCatNums { get; set; }
         public string Image { get; set; }
     }
 }

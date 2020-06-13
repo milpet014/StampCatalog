@@ -3,7 +3,8 @@
        xmlns:views="clr-namespace:StampCatalog"
        xmlns:views1="clr-namespace:StampCatalog.sk" 
        xmlns:views2="clr-namespace:StampCatalog.cz" 
-       xmlns:views3="clr-namespace:StampCatalog.cs" xmlns:views4="clr-namespace:StampCatalog.Views"
+       xmlns:views3="clr-namespace:StampCatalog.cs" 
+       xmlns:views4="clr-namespace:StampCatalog.Views"
        FlyoutHeaderBehavior="CollapseOnScroll"
        x:Class="StampCatalog.AppShell">
 
@@ -30,7 +31,7 @@
                 <views4:StampsView/>
             </ShellContent>
             <ShellContent Title="1993">
-                <views1:sk1993 />
+                <views4:StampsView />
             </ShellContent>
             <ShellContent Title="1994">
                 <views1:sk1994 />
