@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace StampCatalog.Models
 {
-    public class StampTabEntry
+    class StampTabEntryDto
     {
         public Category Category { get; set; }
         public string Title { get; set; }
-        public List<Stamp> Stamp { get; set; }
+        public List<StampDto> StampDtos { get; set; }
     }
 }
