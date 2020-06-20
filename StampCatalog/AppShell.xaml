@@ -27,54 +27,18 @@
             <ShellContent Title="Test">
                 <views4:StampsView/>
             </ShellContent>
-            <ShellContent Title="1993">
-                <views4:StampsView />
-            </ShellContent>
-            <ShellContent Title="1994">
-                <views1:sk1994 />
-            </ShellContent>
-            <ShellContent Title="1995">
-                <views1:sk1994 />
-            </ShellContent>
-            <ShellContent Title="1996">
-                <views1:sk1994 />
-            </ShellContent>
-            <ShellContent Title="1997">
-                <views1:sk1994 />
-            </ShellContent>
-            <ShellContent Title="1998">
-                <views1:sk1994 />
-            </ShellContent>
-            <ShellContent Title="1999">
-                <views1:sk1994 />
-            </ShellContent>
-            <ShellContent Title="2000">
-                <views1:sk1994 />
-            </ShellContent>
         </Tab>
     </FlyoutItem>
 
     <FlyoutItem Title="ČESKÁ REPUBLIKA"
                 Icon="czechoslovak.png" >
         <Tab>
-            <ShellContent Title="1993">
-                <views2:cz1993 />
-            </ShellContent>
-            <ShellContent Title="1994">
-                <views2:cz1994 />
-            </ShellContent>
         </Tab>
     </FlyoutItem>
 
     <FlyoutItem Title="ČESKOSLOVENSKO"
                 Icon="czechoslovak.png" >
         <Tab>
-            <ShellContent Title="1945">
-                <views3:cs1945 />
-            </ShellContent>
-            <ShellContent Title="1946">
-                <views3:cs1946 />
-            </ShellContent>
         </Tab>
     </FlyoutItem>
 </Shell>
