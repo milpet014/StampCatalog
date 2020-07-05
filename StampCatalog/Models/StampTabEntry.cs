@@ -6,6 +6,6 @@ namespace StampCatalog.Models
     {
         public Category Category { get; set; }
         public string Title { get; set; }
-        public List<Stamp> Stamp { get; set; }
+        public List<Stamp> Stamps { get; set; }
     }
 }

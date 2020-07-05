@@ -1,1 +1,22 @@
-﻿
+﻿[
+  {
+    "Category": "SK",
+    "Title": "1993",
+    "StampDtos": [
+      {
+        "Name": "Slovakia State Arms",
+        "CatalogNum": "SK 1",
+        "SerieContainsCatNums": [
+          "SK 2"
+        ]
+      },
+      {
+        "Name": "Slovakia State Arms",
+        "CatalogNum": "SK 2",
+        "SerieContainsCatNums": [
+          "SK 1"
+        ]
+      }
+    ]
+  }
+]

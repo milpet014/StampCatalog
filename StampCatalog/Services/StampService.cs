@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace StampCatalog.Services
 {
@@ -62,21 +63,38 @@ namespace StampCatalog.Services
                         Stamp stamp2 = stampsDictionary[catalogNumber];
                         serieContainsList.Add(stamp2);
                     }
-
                 }
 
+                stampTabEntry.Stamps = stampsDictionary.Values.ToList();
                 entryList.Add(stampTabEntry);
             }
         }
 
         public List<string> GetTabsNames(Category category)
         {
-            return new List<string>();
+            List<string> names = new List<string>();
+
+            foreach (StampTabEntry entry in _entries)
+            {
+                if (entry.Category == category)
+                {
+                    names.Add(entry.Title);
+                }
+            }
+            return names;
         }
 
         public List<Stamp> GetStamps(Category category, string tabName)
         {
-            return new List<Stamp>();
+            foreach (StampTabEntry entry in _entries)
+            {
+                if (entry.Category == category && entry.Title == tabName)
+                {
+                    return entry.Stamps;
+                }
+            }
+
+            return null;
         }
     }
 }
