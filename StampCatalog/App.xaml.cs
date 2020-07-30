@@ -11,13 +11,15 @@ namespace StampCatalog
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new ContentPage();
         }
 
         protected override async void OnStart()
         {
             Stamps = new StampService();
             await Stamps.Initialize();
+
+            MainPage = new AppShell(Stamps);
         }
     }
 }
