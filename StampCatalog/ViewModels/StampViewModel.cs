@@ -1,22 +1,25 @@
 ﻿using StampCatalog.Models;
+using StampCatalog.Views;
 using System.Collections.Generic;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace StampCatalog.ViewModels
 {
     public class StampViewModel
     {
         public List<Stamp> Stamps { get; set; }
+        public ICommand TapCommand { get; }
 
-        public StampViewModel()
+        public StampViewModel(List<Stamp> stamps)
         {
-            Stamps = new List<Stamp>();
+            Stamps = stamps;
+            TapCommand = new Command<Stamp>(OnTap);
+        }
 
-            Stamp mi01 = new Stamp();
-            mi01.Name = "Mi_01";
-            mi01.Image = "https://i.colnect.net/b/2188/891/Slovakia-State-Arms.jpg";
-            mi01.CatalogNum = "POF:Sk 1 Mi:Sk 162";
-
-            Stamps.Add(mi01);
+        public void OnTap(Stamp stamp)
+        {
+            Shell.Current.Navigation.PushAsync(new StampDetailView(stamp));
         }
     }
 }

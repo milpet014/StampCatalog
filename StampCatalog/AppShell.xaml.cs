@@ -21,14 +21,16 @@ namespace StampCatalog
 
                 FlyoutItem flyout = new FlyoutItem();
                 flyout.Title = info.Title;
+                flyout.Icon = info.Image;
 
                 Tab tab = new Tab();
                 
                 foreach (string name in names)
                 {
+                    List<Stamp> tabStamps = stamps.GetStamps(info.Category, name);
                     ShellContent content = new ShellContent();
                     content.Title = name;
-                    content.ContentTemplate = new DataTemplate(typeof(StampsView));
+                    content.ContentTemplate = new DataTemplate(() => new StampsView(tabStamps));
                     tab.Items.Add(content);
                 }
 

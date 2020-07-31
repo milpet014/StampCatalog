@@ -4,18 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:models="clr-namespace:StampCatalog.Models" 
-             xmlns:viewmodels="clr-namespace:StampCatalog.ViewModels"
              mc:Ignorable="d"
-             x:Class="StampCatalog.Views.StampsView">
-
-    <ContentPage.BindingContext>
-        <viewmodels:StampViewModel/>
-    </ContentPage.BindingContext>
+             x:Class="StampCatalog.Views.StampsView"
+             x:Name="Page">
 
     <CollectionView ItemsSource="{Binding Stamps}">
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="models:Stamp">
                 <Grid Padding="6">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding Source={x:Reference Page}, Path=BindingContext.TapCommand}"
+                            CommandParameter="{Binding}"/>
+                    </Grid.GestureRecognizers>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>

@@ -1,6 +1,4 @@
 ﻿using StampCatalog.Models;
-using StampCatalog.ViewModels;
-using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -8,12 +6,12 @@ using Xamarin.Forms.Xaml;
 namespace StampCatalog.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StampsView : ContentPage
+    public partial class StampDetailView : ContentPage
     {
-        public StampsView(List<Stamp> stamps)
+        public StampDetailView(Stamp stamp)
         {
             InitializeComponent();
-            BindingContext = new StampViewModel(stamps);
+            BindingContext = stamp;
         }
     }
 }

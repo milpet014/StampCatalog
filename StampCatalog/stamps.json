@@ -18,5 +18,25 @@
         ]
       }
     ]
+  },
+  {
+    "Category": "SK",
+    "Title": "1994",
+    "StampDtos": [
+      {
+        "Name": "Slovakia State Arms",
+        "CatalogNum": "SK 4",
+        "SerieContainsCatNums": [
+          "SK 5"
+        ]
+      },
+      {
+        "Name": "Slovakia State Arms",
+        "CatalogNum": "SK 5",
+        "SerieContainsCatNums": [
+          "SK 4"
+        ]
+      }
+    ]
   }
 ]
