@@ -4,18 +4,23 @@
     "Title": "1993",
     "StampDtos": [
       {
-        "Name": "Slovakia State Arms",
-        "CatalogNum": "SK 1",
+        "Image": "sk1.jpg",
+        "Name": "Slovenský znak",
+        "CatalogNum": "POF: SK 1 | Mi: SK 162",
+        "Serie": "Erby",
+        "Theme": "Štátny znak",
+        "Value": "8 Kčs",
+        "CatValue": "⦿ - ** -",
+        "Date": "1.1.1993",
+        "Color": "Farebná",
+        "Size": "26x44mm",
         "SerieContainsCatNums": [
           "SK 2"
         ]
       },
       {
         "Name": "Slovakia State Arms",
-        "CatalogNum": "SK 2",
-        "SerieContainsCatNums": [
-          "SK 1"
-        ]
+        "CatalogNum": "SK 2"
       }
     ]
   },

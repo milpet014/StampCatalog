@@ -95,7 +95,7 @@
     <AndroidResource Include="Resources\drawable\czechoslovak.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\sk1993.jpg" />
+    <AndroidResource Include="Resources\drawable\sk1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\home.png" />

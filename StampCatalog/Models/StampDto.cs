@@ -17,5 +17,6 @@ namespace StampCatalog.Models
         public string Value { get; set; }
         public List<string> SerieContainsCatNums { get; set; }
         public string Image { get; set; }
+        public List<string> Sheets { get; set; }
     }
 }

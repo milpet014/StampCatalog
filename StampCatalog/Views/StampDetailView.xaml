@@ -6,13 +6,110 @@
              xmlns:models="clr-namespace:StampCatalog.Models" 
              mc:Ignorable="d"
              x:Class="StampCatalog.Views.StampDetailView"
-             x:DataType="models:Stamp">
-    
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding CatalogNum}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:DataType="models:Stamp"
+             Title="{Binding Name}">
+
+    <StackLayout
+        Padding="10">
+        <Frame
+            HeightRequest="200"
+            HasShadow="True">
+
+            <Image 
+                Source="{Binding Image}"/>
+        </Frame>
+
+        <Frame
+            HasShadow="True">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label 
+                    Text="Katalógové Číslo:"/>
+
+                <Label 
+                    Grid.Row="1"
+                    Text="Séria:"/>
+
+                <Label 
+                    Grid.Row="2"
+                    Text="Téma:"/>
+
+                <Label 
+                    Grid.Row="3"
+                    Text="Nominálna Hodnota:"/>
+
+                <Label 
+                    Grid.Row="4"
+                    Text="Katalógová Hodnota:"/>
+
+                <Label 
+                    Grid.Row="5"
+                    Text="Dátum vydania:"/>
+
+                <Label 
+                    Grid.Row="6"
+                    Text="Farba:"/>
+
+                <Label 
+                    Grid.Row="7"
+                    Text="Rozmery:"/>
+
+                <Label 
+                    Grid.Column="1"
+                    Text="{Binding CatalogNum}"/>
+
+                <Label 
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Text="{Binding Serie}"/>
+
+                <Label 
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Text="{Binding Theme}"/>
+
+                <Label 
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Text="{Binding Value}"/>
+
+                <Label 
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    Text="{Binding CatValue}"/>
+
+                <Label 
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    Text="{Binding Date, StringFormat='{0:dd/MM/yyyy}'}"/>
+
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    Text="{Binding Color}"/>
+
+                <Label 
+                    Grid.Column="1"
+                    Grid.Row="7"
+                    Text="{Binding Size}"/>
+
+            </Grid>
+        </Frame>
+    </StackLayout>
 </ContentPage>

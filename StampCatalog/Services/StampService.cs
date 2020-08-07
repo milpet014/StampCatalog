@@ -48,6 +48,7 @@ namespace StampCatalog.Services
                     stamp.Size = dto2.Size;
                     stamp.Theme = dto2.Theme;
                     stamp.Value = dto2.Value;
+                    stamp.Sheets = dto2.Sheets;
                     stamp.SerieContains = new List<Stamp>();
 
                     stampsDictionary[stamp.CatalogNum] = stamp;
@@ -56,7 +57,10 @@ namespace StampCatalog.Services
                 foreach (StampDto dto2 in dto.StampDtos)
                 {
                     Stamp stamp = stampsDictionary[dto2.CatalogNum];
-                    List<Stamp> serieContainsList = stamp.SerieContains; 
+                    List<Stamp> serieContainsList = stamp.SerieContains;
+
+                    if (dto2.SerieContainsCatNums == null)
+                        continue;
 
                     foreach (string catalogNumber in dto2.SerieContainsCatNums)
                     {

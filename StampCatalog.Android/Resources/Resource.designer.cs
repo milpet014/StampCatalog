@@ -8376,7 +8376,7 @@ namespace StampCatalog.Droid
 			public const int notify_panel_notification_icon_bg = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int sk1993 = 2131165303;
+			public const int sk1 = 2131165303;
 			
 			// aapt resource value: 0x7F070078
 			public const int slovak = 2131165304;
